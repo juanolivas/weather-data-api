@@ -37,6 +37,7 @@ gem "rack-cors"
 
 gem "httparty"
 gem "dotenv-rails"
+gem "redis"
 
 group :development, :test do
   gem 'rspec-rails', '~> 7.0.0'

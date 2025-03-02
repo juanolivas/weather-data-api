@@ -17,7 +17,7 @@ module Api
 
     def get_weather(lat: nil, lon: nil)
       url = "#{BASE_URL}/forecast"
-      
+
       response = HTTParty.get(url, query: {
         lat: lat,
         lon: lon,
