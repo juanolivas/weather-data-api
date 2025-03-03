@@ -1,6 +1,6 @@
 module Api
   class PlacesService < BaseService
-    BASE_URL = 'https://search.reservamos.mx/api/v2/places'
+    BASE_URL = "https://search.reservamos.mx/api/v2/places"
 
     def get_place(city)
       url = "#{BASE_URL}"

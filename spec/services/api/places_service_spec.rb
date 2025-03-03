@@ -5,7 +5,8 @@ RSpec.describe Api::PlacesService do
     let(:service) { described_class.new }
 
     it 'returns only cities' do
-      #TODO: Use VCR for a real call
+      # TODO: Use VCR for a real call
+
       response = [
         {
             "id": 141,
@@ -70,11 +71,11 @@ RSpec.describe Api::PlacesService do
             "result_type": "city",
             "popularity": "0",
             "sort_criteria": 0.6
-        }]
+        } ]
 
       mock_response_object = instance_double(
-        HTTParty::Response, 
-        code: 200, 
+        HTTParty::Response,
+        code: 200,
         body: response.to_json
       )
 
@@ -90,8 +91,8 @@ RSpec.describe Api::PlacesService do
 
     it 'handles API errors' do
       mock_error_response = instance_double(
-        HTTParty::Response, 
-        code: 500, 
+        HTTParty::Response,
+        code: 500,
         body: '{"error": "Server error"}'
       )
 
