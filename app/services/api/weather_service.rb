@@ -9,7 +9,8 @@ module Api
         lat: lat,
         lon: lon,
         appid: API_KEY,
-        units: 'metric'
+        units: 'metric',
+        lang: 'es'
       })
 
       handle_response(response)
@@ -22,7 +23,8 @@ module Api
         lat: lat,
         lon: lon,
         appid: API_KEY,
-        units: 'metric'
+        units: 'metric',
+        lang: 'es'
       })
 
       handle_response(response)
